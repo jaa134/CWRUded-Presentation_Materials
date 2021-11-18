@@ -1,0 +1,19 @@
+Db Management Server
+    - One server to make API calls to endpoints provided by campus
+    - Server will be responsible for collecting results and inserting new data into the database
+
+App Management Server
+    - One server to provide endpoints for applications to request data.
+    - https://stackoverflow.com/questions/34855352/how-in-general-does-node-js-handle-10-000-concurrent-requests
+    - Do we want to be stateful? Should we load relevant information into memory?
+        - PROS
+            - (Likely) Faster response times for clients
+        - CONS
+            - More memory use
+            - Will require additional behavior on startup to load results into memory
+            - Results could be out of database
+            - Background process could crahs server with two many results
+
+        - OPTIONS
+            - Hybrid approach could be more efficient, querying for results only when in-memory data is missing or considered stale?
+

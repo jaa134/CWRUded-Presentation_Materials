@@ -1,0 +1,4 @@
+curl -X PUT --data "location_name=Home&extent=0" http://localhost:5000/api/updateLocation 
+curl -X PUT --data "location_name=Home&extent=0" http://cwruded.herokuapp.com/api/updateLocation 
+
+

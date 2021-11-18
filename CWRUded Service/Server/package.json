@@ -1,0 +1,26 @@
+{
+  "name": "cwruded",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "heroku-postbuild": "npm install --production",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "cron": "^1.7.0",
+    "debug": "~0.7.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.0.0",
+    "jade": "~1.3.0",
+    "make-runnable": "^1.3.6",
+    "morgan": "~1.0.0",
+    "nodejs": "0.0.0",
+    "pg": "^7.7.1",
+    "static-favicon": "~1.0.0"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
